@@ -17,7 +17,9 @@
 
 </head>
 <body>
-	<div class="container">
+<div th:replace = "layout :: menu"></div>
+	<div class="container my-5">
+		
 		<div class="row">
 			<div class="col-lg-8 offset-lg-2">
 				<div class="card">
@@ -28,14 +30,14 @@
 
 					</div>
 					<div class="card-body">
-						<div class="d-flex justify-content-between m-2">
+						<!-- <div class="d-flex justify-content-between m-2">
 							<a href="/new" class="btn btn-primary"><i
 								class="fas fa-user-plus ml-2"> Add Commande</i></a>
 							<div class="col-md-4">
 								<input type="text" class="form-control " id="myInput"
 									onkeyup="filtrage()" placeholder="Search for names..">
 							</div>
-						</div>
+						</div> -->
 
 
 						<table id="myTable" class="table ">
