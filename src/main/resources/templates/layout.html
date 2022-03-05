@@ -33,6 +33,8 @@
       id="myInput" onkeyup="filtrage()" aria-label="Search">
      
     </form>
+    
+    	<span sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></span>
   </div>
 </nav>
 </body>

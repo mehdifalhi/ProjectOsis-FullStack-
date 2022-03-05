@@ -36,6 +36,13 @@ public class ControllerPrd {
 	@Autowired
 	private ComandeService service;
 	
+	@GetMapping("/login")
+	public String login() {
+		return "login";
+	}
+	
+	
+	
 	
 	@GetMapping("/")
 	public String showPage(Model model,@RequestParam(defaultValue ="0") int page){
